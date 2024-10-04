@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        header {
+            background-color: yellow;
+            text-align: center;
+            padding: 20px;
+            font-weight: bold;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .sidebar1, .content, .sidebar2 {
+            height: 450px;
+            padding: 20px;
+            text-align: center;
+        }
+        .sidebar1 {
+            background-color: pink;
+            flex: 1;
+            height: 550px;
+        }
+        .content {
+            background-color: purple;
+            flex: 2;
+            height: 550px;
+        }
+        .sidebar2 {
+            background-color: lightgreen;
+            flex: 1;
+            height: 550px;
+        }
+        footer {
+            background-color: white;
+            text-align: center;
+            padding: 10px;
+            border-top: 1px solid #ccc;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        Phần Header
+    </header>
+    <div class="container">
+        <div class="sidebar1">
+            Phần Sidebar 1
+        </div>
+        <div class="content">
+            Phần nội dung Web
+        </div>
+        <div class="sidebar2">
+            Phần Sidebar 2
+        </div>
+    </div>
+    <footer>
+        <div class="footer"></div>
+             Phần Footer
+        </div>
+    </footer>
+</body>
+</html>
